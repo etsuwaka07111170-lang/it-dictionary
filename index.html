@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>わたしのIT用語辞典</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>わたしのIT用語辞典</h1>
+
+  <input id="search" placeholder="用語・略語・英語で検索">
+
+  <h2>用語を追加</h2>
+  <input id="term" placeholder="用語名（日本語 or 英語）">
+  <input id="abbr" placeholder="略語（SSOなど）">
+  <input id="full" placeholder="正式名称（英語）">
+  <textarea id="myDesc" placeholder="自分用の説明"></textarea>
+  <textarea id="officialDesc" placeholder="公式っぽい説明"></textarea>
+
+  <button onclick="addTerm()">追加</button>
+
+  <h2>一覧</h2>
+  <ul id="list"></ul>
+
+  <script src="app.js"></script>
+</body>
+</html>
